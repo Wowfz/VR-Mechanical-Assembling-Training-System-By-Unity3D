@@ -260,6 +260,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="VID">
+      <HintPath>Assets/VID/VID.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Advertisements">
       <HintPath>C:/Users/liang/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
@@ -283,13 +286,40 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AVProVideo\Demos\Scripts\AutoRotate.cs" />
+    <Compile Include="Assets\AVProVideo\Demos\Scripts\ChangeVideoExample.cs" />
+    <Compile Include="Assets\AVProVideo\Demos\Scripts\DemoInfo.cs" />
+    <Compile Include="Assets\AVProVideo\Demos\Scripts\FrameExtract.cs" />
+    <Compile Include="Assets\AVProVideo\Demos\Scripts\Mapping3D.cs" />
+    <Compile Include="Assets\AVProVideo\Demos\Scripts\SampleApp.cs" />
+    <Compile Include="Assets\AVProVideo\Demos\Scripts\SampleApp_Multiple.cs" />
+    <Compile Include="Assets\AVProVideo\Demos\Scripts\SimpleController.cs" />
+    <Compile Include="Assets\AVProVideo\Demos\Scripts\SphereDemo.cs" />
+    <Compile Include="Assets\AVProVideo\Demos\Scripts\VCR.cs" />
+    <Compile Include="Assets\AVProVideo\Scripts\Components\ApplyToMaterial.cs" />
+    <Compile Include="Assets\AVProVideo\Scripts\Components\ApplyToMesh.cs" />
+    <Compile Include="Assets\AVProVideo\Scripts\Components\CubemapCube.cs" />
+    <Compile Include="Assets\AVProVideo\Scripts\Components\DisplayBackground.cs" />
+    <Compile Include="Assets\AVProVideo\Scripts\Components\DisplayIMGUI.cs" />
+    <Compile Include="Assets\AVProVideo\Scripts\Components\DisplayUGUI.cs" />
+    <Compile Include="Assets\AVProVideo\Scripts\Components\MediaPlayer.cs" />
+    <Compile Include="Assets\AVProVideo\Scripts\Components\Support\ApplyToTextureWidgetNGUI.cs" />
+    <Compile Include="Assets\AVProVideo\Scripts\Components\UpdateStereoMaterial.cs" />
+    <Compile Include="Assets\AVProVideo\Scripts\Internal\AndroidMediaPlayer.cs" />
+    <Compile Include="Assets\AVProVideo\Scripts\Internal\BaseMediaPlayer.cs" />
+    <Compile Include="Assets\AVProVideo\Scripts\Internal\Interfaces.cs" />
+    <Compile Include="Assets\AVProVideo\Scripts\Internal\NullMediaPlayer.cs" />
+    <Compile Include="Assets\AVProVideo\Scripts\Internal\OSXMediaPlayer.cs" />
+    <Compile Include="Assets\AVProVideo\Scripts\Internal\WindowsMediaPlayer.cs" />
     <Compile Include="Assets\Scripts\ControllerGrabObject.cs" />
     <Compile Include="Assets\Scripts\CubeTransformation.cs" />
     <Compile Include="Assets\Scripts\CylinderTransformation.cs" />
     <Compile Include="Assets\Scripts\LaserPointer.cs" />
+    <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\Object_orders.cs" />
     <Compile Include="Assets\Scripts\Object_select.cs" />
     <Compile Include="Assets\Scripts\set_center_of_gravity.cs" />
+    <Compile Include="Assets\Scripts\video_player.cs" />
     <Compile Include="Assets\Scripts\ViveControllerInputTest.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
@@ -393,6 +423,8 @@
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_TrackedObject.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_UpdatePoses.cs" />
     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Utils.cs" />
+    <Compile Include="Assets\VID\Demo\WASDPlayerMove.cs" />
+    <Compile Include="Assets\VID\VIDSettingsInit.cs" />
     <Compile Include="Assets\VRTK\Examples\ExampleResources\Scripts\Archery\Arrow.cs" />
     <Compile Include="Assets\VRTK\Examples\ExampleResources\Scripts\Archery\ArrowNotch.cs" />
     <Compile Include="Assets\VRTK\Examples\ExampleResources\Scripts\Archery\ArrowSpawner.cs" />
@@ -649,6 +681,11 @@
     <Compile Include="Assets\VRTK\SDK\Ximmerse\SDK_XimmerseSystem.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\AVProVideo\Demos\Materials\FillBackground.shader" />
+    <None Include="Assets\AVProVideo\Demos\Materials\UI-Default-ExtraTexture.shader" />
+    <None Include="Assets\AVProVideo\Demos\Materials\UI-DefaultFont-ExtraTexture.shader" />
+    <None Include="Assets\AVProVideo\Materials\InsideSphere.shader" />
+    <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />
     <None Include="Assets\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />

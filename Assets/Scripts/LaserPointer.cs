@@ -68,6 +68,8 @@ public class LaserPointer : MonoBehaviour
         {
             RaycastHit hit;
 
+            teleportMask = LayerMask.NameToLayer("Floor");
+
             // Send out a raycast from the controller
             if (Physics.Raycast(trackedObj.transform.position, transform.forward, out hit, 100, teleportMask))
             {

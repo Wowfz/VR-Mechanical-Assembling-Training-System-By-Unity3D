@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Game.unity
+- path: Assets/Scenes/work_light.unity
   isLoaded: 1
   isActive: 1

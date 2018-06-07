@@ -415,9 +415,14 @@ public class ControllerGrabObject : MonoBehaviour
             }
         }
 
+        if (Controller.GetPressDown(SteamVR_Controller.ButtonMask.System))
+        {
+            Application.LoadLevel("work_light");//重载场景
+        }
+
         if (Controller.GetPressDown(SteamVR_Controller.ButtonMask.Grip))
         {
-            Application.LoadLevel("Game");//重载场景
+            Application.LoadLevel("iphone4");//载入iphone4场景
         }
 
 

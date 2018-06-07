@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/work_light.unity
+    guid: e823e573a604765459bc417243cd46b1
+  - enabled: 1
+    path: Assets/Scenes/iphone4.unity
+    guid: 7aa460e97c76f3d499976b2fd96fc6a4
